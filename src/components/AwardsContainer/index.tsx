@@ -15,7 +15,7 @@ const awards = [
 	},
 	{
 		url: '/intro/images/app-store@2x.png',
-		text: ['2018 애플 앱스토어', <br />, '오늘의 여행 앱 선정'],
+		text: ['2018 애플 앱스토어', <br />, '오늘의 여행앱 선정'],
 	},
 ];
 
