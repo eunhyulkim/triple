@@ -1,0 +1,56 @@
+@mixin logo($width, $height) {
+    width: $width;
+    height: $height;
+    background-size: $width $height;
+    background-repeat: no-repeat;
+}
+
+@keyframes fadeUp {
+    from {
+        transform: translate3d(0,40px,0)    ;
+        -webkit-transform: translate3d(0,40px,0);
+        -moz-transform: translate3d(0,40px,0);
+        -ms-transform: translate3d(0,40px,0);
+        -o-transform: translate3d(0,40px,0);
+}
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1    ;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+}
+}
+
+.intro-page {
+    text-align: center;
+    height: auto;
+
+    .statistic-section {
+        width: 1040px;
+        height: auto;
+        margin: 0px auto;
+        position: relative;
+    
+        &--content-logo {
+            @include logo(400px, 338px);
+            box-sizing: border-box;
+            position: absolute;
+            top: 150px;
+            padding-top: 280px;
+            font-size: 15px;
+            color: rgba(58, 58, 58, 0.7);
+        }
+
+        @for $i from 1 through 3 {
+            & > div:nth-child(#{$i}) {
+                opacity: 0;
+                animation: fadeUp 700ms linear ($i * 100ms) 1 normal forwards;
+                -webkit-animation: fadeUp 700ms linear ($i * 100ms) 1 normal forwards;
+            }
+        }
+    }
+}
+
