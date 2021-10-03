@@ -3,7 +3,7 @@ import { ComponentProps } from 'custom-types';
 import classNames from 'classnames';
 import Item from 'components/Item';
 import AnimateNumber from 'components/AnimateNumber';
-import { BLOCK } from '..';
+import { ELEMENT as BLOCK } from '..';
 import './style.scss';
 
 interface MetricsItemProps extends ComponentProps {

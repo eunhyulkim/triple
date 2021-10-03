@@ -6,13 +6,14 @@ import AwardsContainer from 'components/AwardsContainer';
 import './style.scss';
 
 export const BLOCK = 'statistic-section';
+const ELEMENT = 'content-logo';
 const LOGO_URL = '/intro/images/triple@2x.png';
 
 export default function IntroPage() {
 	return (
 		<div className="intro-page">
 			<Section className={BLOCK}>
-				<Logo className={`${BLOCK}--content-logo`} url={LOGO_URL}>
+				<Logo className={`${BLOCK}--${ELEMENT}`} url={LOGO_URL}>
 					2019년 2월 기준
 				</Logo>
 				<MetricsContainer></MetricsContainer>

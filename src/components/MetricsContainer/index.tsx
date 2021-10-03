@@ -7,7 +7,7 @@ import './style.scss';
 
 interface MetricsContainerProps extends ComponentProps {}
 
-export const BLOCK = 'metrics-container';
+export const ELEMENT = 'metrics-container';
 
 const metrics = [
 	{ value: 350, unit: '만 명', content: '사용자' },
@@ -17,7 +17,7 @@ const metrics = [
 
 export default function MetricsContainer({ className, children }: MetricsContainerProps) {
 	return (
-		<div className={classNames(`${PARENT_BLOCK}--${BLOCK}`, className)}>
+		<div className={classNames(`${PARENT_BLOCK}--${ELEMENT}`, className)}>
 			{metrics.map((metric) => (
 				<MetricsItem key={metric.content} to={metric.value} unit={metric.unit}>
 					{metric.content}
