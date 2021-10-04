@@ -21,7 +21,7 @@ const awards = [
 
 export default function AwardsContainer({ className, children }: AwardsContainerProps) {
 	return (
-		<div className={classNames(`${PARENT_BLOCK}--${BLOCK}`, className)}>
+		<div className={classNames(`${PARENT_BLOCK}__${BLOCK}`, className)}>
 			{awards.map((award, idx) => (
 				<AwardItem key={idx} url={award.url}>
 					{award.text}

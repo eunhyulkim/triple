@@ -17,7 +17,7 @@ const metrics = [
 
 export default function MetricsContainer({ className, children }: MetricsContainerProps) {
 	return (
-		<div className={classNames(`${PARENT_BLOCK}--${ELEMENT}`, className)}>
+		<div className={classNames(`${PARENT_BLOCK}__${ELEMENT}`, className)}>
 			{metrics.map((metric) => (
 				<MetricsItem key={metric.content} to={metric.value} unit={metric.unit}>
 					{metric.content}

@@ -13,7 +13,7 @@ export default function IntroPage() {
 	return (
 		<div className="intro-page">
 			<Section className={BLOCK}>
-				<Logo className={`${BLOCK}--${ELEMENT}`} url={LOGO_URL}>
+				<Logo className={`${BLOCK}__${ELEMENT}`} url={LOGO_URL}>
 					2019년 2월 기준
 				</Logo>
 				<MetricsContainer></MetricsContainer>

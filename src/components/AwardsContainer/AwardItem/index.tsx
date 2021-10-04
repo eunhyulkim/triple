@@ -15,7 +15,7 @@ export default function AwardItem({ url, className, children }: AwardItemProps) 
 	};
 
 	return (
-		<Item style={style} className={classNames(`${BLOCK}--item`, className)}>
+		<Item style={style} className={classNames(`${BLOCK}__item`, className)}>
 			{children}
 		</Item>
 	);

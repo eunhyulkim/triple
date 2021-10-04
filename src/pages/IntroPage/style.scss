@@ -34,7 +34,7 @@
         margin: 0px auto;
         position: relative;
     
-        &--content-logo {
+        &__content-logo {
             @include logo(400px, 338px);
             box-sizing: border-box;
             position: absolute;

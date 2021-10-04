@@ -24,7 +24,7 @@ export default function MetricsItem({
 	unit,
 }: MetricsItemProps) {
 	return (
-		<Item className={classNames(`${BLOCK}--item`, className)}>
+		<Item className={classNames(`${BLOCK}__item`, className)}>
 			<strong>
 				<AnimateNumber from={from} to={to} duration={duration} span /> {' ' + unit}
 			</strong>
